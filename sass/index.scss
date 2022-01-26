@@ -1,3 +1,6 @@
+$browncolor:#472718;
+
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -9,7 +12,9 @@ a {
 }
 
 body {
+    color: $browncolor;
     h2{
+        color:$browncolor;
         @media (max-width:767px) {
             text-align: center;
         }

@@ -14,7 +14,7 @@ section.menuoftheday{
             box-shadow: 298px 0px 86px -100px white inset;
             width: 60%;
         }
-        .menu-items{
+       .menu-items{
             padding: 10px 40px;
             @media (max-width:991px) {
                 padding: 5px 20px;
@@ -46,6 +46,7 @@ section.menuoftheday{
                     button{
                         float: right;
                         min-width: 20%;
+                        background-color: $browncolor;
                     }
                 }
                 .img-f-con{
@@ -68,6 +69,7 @@ section.menuoftheday{
         @media (max-width:767px) {
             width: 312px;
             height: 488px;
+            top: 20px;
         }
         img{
             position: absolute;
@@ -82,7 +84,7 @@ section.menuoftheday{
                 right: -35px;
             }
             @media (max-width:767px) {
-                // right: -50px;
+                position: initial;
                 width: 100%;
             }
         }

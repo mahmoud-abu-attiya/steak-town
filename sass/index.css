@@ -10,6 +10,14 @@ a {
   text-decoration: none;
 }
 
+body {
+  color: #472718;
+}
+
+body h2 {
+  color: #472718;
+}
+
 @media (max-width: 767px) {
   body h2 {
     text-align: center;
@@ -213,19 +221,16 @@ nav #navbarTogglerDemo01 ul li a {
 #carouselExampleControls .header h1 {
   display: inline-block;
   font-size: 86px;
-  text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.7);
+  text-shadow: 2px 2px 5px #000;
+  white-space: nowrap;
 }
 
-#carouselExampleControls .header h1 .sb {
-  display: inline-block;
+#carouselExampleControls .header h1 span {
+  font-weight: 100;
+  letter-spacing: -5px;
 }
 
-#carouselExampleControls .header h1 .sb h2 {
-  margin: 0;
-  font-weight: 400;
-}
-
-#carouselExampleControls .header .logo {
+#carouselExampleControls .logo {
   display: none;
 }
 
@@ -246,6 +251,22 @@ nav #navbarTogglerDemo01 ul li a {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+}
+
+#carouselExampleControls button {
+  opacity: 1;
+  font-size: 2em;
+}
+
+#carouselExampleControls button i {
+  -webkit-transform: rotateZ(-135deg);
+          transform: rotateZ(-135deg);
+  color: #fff;
+}
+
+#carouselExampleControls button .second {
+  -webkit-transform: rotateZ(45deg);
+          transform: rotateZ(45deg);
 }
 
 @media (max-width: 992px) {
@@ -315,7 +336,7 @@ section.products .card .card-body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-color: #eee;
+  background-color: #f6f6f6;
 }
 
 section.products .card .card-body p {
@@ -421,6 +442,7 @@ section.menuoftheday .menu .menu-items .menu-item .food-info p {
 section.menuoftheday .menu .menu-items .menu-item .food-info button {
   float: right;
   min-width: 20%;
+  background-color: #472718;
 }
 
 section.menuoftheday .menu .menu-items .menu-item .img-f-con {
@@ -444,6 +466,7 @@ section.menuoftheday .chef {
   section.menuoftheday .chef {
     width: 312px;
     height: 488px;
+    top: 20px;
   }
 }
 
@@ -472,6 +495,7 @@ section.menuoftheday .chef img {
 
 @media (max-width: 767px) {
   section.menuoftheday .chef img {
+    position: initial;
     width: 100%;
   }
 }
