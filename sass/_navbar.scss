@@ -27,6 +27,14 @@ nav {
     }
   }
   .socail {
+    @media (min-width: 992px) {
+        right: 15px;
+        position: absolute;
+        top: 18px;
+        a {
+          margin: 0 5px;
+        }
+    }
     a {
       font-size: clamp(20px, 1.5vw, 30px);
       color: #fff;
@@ -35,6 +43,9 @@ nav {
         transition: 0.3s;
         transform: scale(1.1);
       }
+      @media (min-width: 992px) {
+            margin: 0 5px;
+          }
     }
   }
   #navbarTogglerDemo01 {
@@ -66,17 +77,6 @@ nav {
   }
 }
 
-@media (min-width: 992px) {
-  .socail {
-    right: 15px;
-    position: absolute;
-    top: 18px;
-    // display: block;
-    a {
-      margin: 0 5px;
-    }
-  }
-}
 @media (max-width: 992px) {
   nav {
     height: auto;
